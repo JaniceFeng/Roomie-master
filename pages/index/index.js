@@ -9,9 +9,29 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+  toBulletin: function () {
+    wx.navigateTo({
+      url: '../bulletin/bulletin'
+    })
+  },
+  toCleanUp: function () {
+    wx.navigateTo({
+      url: '../CleanUp/CleanUp'
+    })
+  },
+  toNotify: function () {
+    wx.navigateTo({
+      url: '../notify/notify'
+    })
+  },
   toast: function () {
     wx.navigateTo({
       url: '../match/match'
+    })
+  },
+  share: function(){
+    wx.navigateTo({
+      url: '../share/share'
     })
   },
   //事件处理函数
